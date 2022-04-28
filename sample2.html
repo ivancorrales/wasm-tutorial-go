@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <script src="wasm_exec.js"></script>
+    <script src="load_wasm.js"></script>
+    <script>
+      loadWasm("pos-tagging-service.sample2.wasm")
+        .then((wasm) => {
+          console.log("main.wasm is loaded 👋");
+        })
+        .catch((error) => {
+          console.log("ouch", error);
+        });
+    </script>
+    <div class="center">
+      <h1>Pos-tagging service<h1>
+      <h2 id="description"></h2>
+    </div>
+  </body>
+</html>
