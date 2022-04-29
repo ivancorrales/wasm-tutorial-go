@@ -7,7 +7,7 @@ import (
 
 func main() {
 	document := js.Global().Get("document")
-	message := document.Call("getElementById", "simpleText")
+	message := document.Call("getElementById", "description")
 
 	message.Get("style").Call("setProperty", "display", "block")
 	time.Sleep(2 * time.Second)

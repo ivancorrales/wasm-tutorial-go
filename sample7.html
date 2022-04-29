@@ -17,13 +17,16 @@
         });
     </script>
     <div id="main" class="center">
-      <h1>Pos-tagging service<h1>
-      <h2 id="description">Sample IV | Modifying classes</h2>
-      <label>Raw JSON</label>
-      <textarea rows="10" cols="100" id="input" onfocus="editionMode(this)" onblur="prettify(this)"></textarea>
-      <label>Pretty JSON</label>
-      <textarea rows="10" cols="100" id="output" readonly="true"></textarea>
-    
+      <h1>Webassembly tutorial<h1>
+      <h2 id="description">JSON Beautifier Online service</h2>
+      <div>
+        <label for="input">Raw JSON</label>
+        <textarea rows="10" cols="100" id="input" name="input"  onfocus="editionMode(this)" onblur="prettify(this)"></textarea>
+      </div>
+      <div>
+        <label for="output">Pretty JSON</label>
+        <textarea rows="10" cols="100" id="output" name="output" readonly="true"></textarea>
+      </div>
     </div>
   </body>
 </html>

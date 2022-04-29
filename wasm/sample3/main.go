@@ -6,13 +6,11 @@ import (
 
 func main() {
 	document := js.Global().Get("document")
-	h2 := document.Call("getElementById", "description")
-	h2.Set("innerHTML", "Sample III | Appending HTML elements")
 
-	h3 := document.Call("createElement", "h3")
-	h3.Set("innerHTML", "It looks great!")
+	h2 := document.Call("createElement", "h2")
+	h2.Set("innerHTML", "Sample 3 | Appending HTML elements")
 
 	div := document.Call("getElementById", "main")
-	div.Call("appendChild", h3)
+	div.Call("appendChild", h2)
 
 }

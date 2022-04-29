@@ -7,10 +7,9 @@ import (
 
 func main() {
 	document := js.Global().Get("document")
-	input := document.Call("getElementById", "inputText").Get("innerHTML")
-	println(input.String())
+	input := document.Call("getElementById", "description").
+		Get("innerHTML")
 	outputMessage := strings.ToUpper(input.String())
-	println(outputMessage)
-	document.Call("getElementById", "outputText").Set("innerHTML", outputMessage)
-
+	document.Call("getElementById", "descriptionUppercase").
+		Set("innerHTML", outputMessage)
 }
